@@ -1,0 +1,83 @@
+<div class="tickets container-fluid animated fadeIn fast">
+    <div class="w-100 mx-0 row pt-5">
+        <div class="col-12 text-center">
+                <p class="ticket-text">
+                    {{ ticketText1 }} <br>
+                    {{ ticketText2 }}
+                </p>
+        </div>
+    </div>
+    <div class="w-100 mx-0 row pt-5">
+        <div class="col-4 d-flex align-items-center justify-content-center">
+            <span class="free-day py-1 px-1 px-md-3">Free Day</span>
+        </div>
+        <div class="col-8">
+            <ul class="ticket-list">
+                <li>Puedes ir a LEGO® Fun Fest el día que quieras sin restricción de horario.</li>
+                <li>Hasta agotar boletería.</li>
+                <li>Válida para un solo ingreso.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="w-100 mx-0 row pt-5" id="tickets">
+        <div class="col text-center">
+                <span class="ticket-text py-1 px-3">Venta de entradas</span>
+        </div>
+    </div>
+
+    <div class="row w-100 m-0">
+           <div class="col-6">
+                <div class="row pr-0 pr-md-5">
+                    <div class="col-12">
+                        <p class="text-center ml-auto ticket-sub-title">
+                            <b>Tipo</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row pl-0 pl-md-5">
+                    <div class="col-12">
+                        <p class="text-center mr-auto ticket-sub-title">
+                            <b>Valor</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div *ngFor="let item of items">
+        <div class="row w-100 m-0">
+           <div class="col-6">
+                <div class="row pr-0 pr-md-5">
+                    <div class="col-12">
+                        <p class="ticket-sub-info ml-auto">
+                            <b>{{ item[0] }}</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row pl-0 pl-md-5">
+                    <div class="col-12">
+                        <p class="ticket-sub-info mr-auto">
+                            <b>{{ item[1] }}</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100 mx-0 row pt-5" id="schedules">
+        <div class="col text-center">
+                <span class="ticket-text py-1 px-3">Horarios</span>
+        </div>
+    </div>
+    <div class="w-100 mx-0 row pt-3 mb-5 pb-5">
+        <div class="col-12 col-lg-6 text-center mx-auto">
+            <div class="d-inline-block ticket-sub-info big py-1 px-3 mx-4 h6">Abierto todos los días de <br> 9:00 a.m a 9:00 p.m.</div>
+        </div>
+    </div>
+    <div class="legobg w-100"></div>
+</div>

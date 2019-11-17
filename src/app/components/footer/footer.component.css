@@ -1,0 +1,26 @@
+.bg-yellow {
+    background-color: rgb(255, 214, 0);
+}
+
+.footer-text {
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px 0px 0 #000, 0px 2px 0 #000, -2px 0px 0 #000, 0px -2px 0 #000;
+}
+
+.lego-footer {
+    color: black !important;
+}
+
+.clickable {
+    cursor: pointer !important;
+}
+
+.mailto {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+.mailto:hover {
+    text-decoration: underline black !important;
+}

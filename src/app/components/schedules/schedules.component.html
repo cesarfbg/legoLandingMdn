@@ -1,0 +1,41 @@
+<div class="container pt-4" id="stations">
+    <div class="w-100 mx-0 row py-4">
+        <div class="col text-center">
+            <span class="schedule-text py-1 px-3">Estaciones</span>
+        </div>
+    </div>
+    <div class="row w-100 m-0">
+        <div class="col-12 col-lg-6 animated fadeInLeft fast">
+            <div class="row" *ngFor="let station of stations1; let idx = index;" (click)="show(idx, 1)">
+                <div class="col-10 mx-auto station">
+                    <div class="row">
+                        <div class="col-10 station-title">{{ station[0] }}</div>
+                        <div class="col-2 plus text-right">+</div>
+                    </div>
+                    <div class="row">
+                        <div class="col animated bounceIn faster" [ngClass]="{'bounceOut': !station[3], 'd-none': station[4]}">
+                            <img *ngIf="station[1]" class="img-fluid" [src]="'assets/images/stations/'+station[1]" alt="">
+                            <p class="p-3 mb-0 text-justify bigger">{{ station[2] }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 animated fadeInRight fast">
+            <div class="row" *ngFor="let station of stations2; let idx = index;" (click)="show(idx, 2)">
+                <div class="col-10 mx-auto station">
+                    <div class="row">
+                        <div class="col-10 station-title">{{ station[0] }}</div>
+                        <div class="col-2 plus text-right">+</div>
+                    </div>
+                    <div class="row">
+                        <div class="col animated bounceIn faster" [ngClass]="{'bounceOut': !station[3], 'd-none': station[4]}">
+                            <img *ngIf="station[1]" class="img-fluid" [src]="'assets/images/stations/'+station[1]" alt="">
+                            <p class="p-3 mb-0 text-justify bigger">{{ station[2] }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

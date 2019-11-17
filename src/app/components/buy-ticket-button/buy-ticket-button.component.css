@@ -1,0 +1,11 @@
+.buy-tickets {
+    position: relative;
+    top: -15px;
+    max-width: 180px;
+}
+
+@media (max-width: 768px) {
+    .buy-tickets {
+        max-width: 120px;
+    }
+}

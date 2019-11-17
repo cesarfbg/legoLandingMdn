@@ -1,0 +1,26 @@
+.map-text {
+    color: black;
+}
+
+.map-text-container {
+    background-color: rgb(255, 214, 0);
+    border-radius: 25px;
+}
+
+.legobg {
+    background-image: url('../../../assets/images/separators/legos_yellow_bg.png');
+    height: 28px;
+    background-repeat: repeat-x;
+    background-position: center center;
+}
+
+.card-title {
+    font-family: 'Burbank Big Condensed' !important;
+    font-size: 34px !important;
+}
+
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 26px !important;
+    }
+}

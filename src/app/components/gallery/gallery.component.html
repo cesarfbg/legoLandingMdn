@@ -1,0 +1,31 @@
+<div class="container-fluid p-0 m-0 animated fadeIn fast" id="gallery">
+    <div class="w-100 mx-0 row py-4">
+        <div class="col text-center">
+            <span class="gallery-text py-1 px-3">Galería</span>
+        </div>
+    </div>
+
+    <div class="row w-100 pb-0 m-0 animated fadeIn fast" *ngIf="!showSlide">
+        <div class="col-4 col-lg-2 m-0 p-0 carousel-block" *ngFor="let slide of slides; let idx = index;">
+            <img class="img-fluid m-0 p-0" [src]="slide[0]" (click)="onClick(idx)">
+        </div>
+    </div>
+
+    <div id="carousel" class="carousel slide animated fadeIn fast" data-ride="carousel" *ngIf="showSlide">
+        <div class="carousel-exit text-right gallery-text" (click)="carouselExit()">X</div>
+        <div class="carousel-inner">
+            <div class="carousel-item" *ngFor="let slide of slides; let idx = index;" [ngClass]="{'active': slide[1] === true}"
+                 [style]="bgStyle+idx+'.jpg'">
+                <img [src]="slide[2]" class="sliderr d-block mx-auto" data-interval="999999">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+</div>
