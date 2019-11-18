@@ -7,11 +7,7 @@ import { Component } from '@angular/core';
 })
 export class BannerComponent {
 
-  // Textos banner izquierda
-  leftBannerText1 = 'UNICENTRO - BOGOTÁ';
-  leftBannerText2 = '24 DE OCTUBRE AL 11 DE NOVIEMBRE';
-
-  // Textos banner derecha
+  // Textos banner
   rightBannerText1 = 'VIVA ENVIGADO - MEDELLÍN';
   rightBannerText2 = '28 DE NOVIEMBRE AL 15 DE DICIEMBRE';
 
