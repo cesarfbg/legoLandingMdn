@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "gitDeploy": "ng build --prod --output-path docs --base-href /legoLandingMdn/"
+    "gitDeploy": "ng build --prod --output-path docs --base-href /legoLandingMdn/",
+    "prodDeploy": "ng build --prod --base-href /legoFest/"
   },
   "private": true,
   "dependencies": {
